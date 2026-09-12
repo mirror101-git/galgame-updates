@@ -1,0 +1,53 @@
+{
+  "labels": {
+    "bonus_route": [
+      ["title", "番外 · 天台演唱会"],
+      ["trans", "fade", 0.6],
+      ["bg", "rooftop"],
+      ["music", "warm"],
+      ["narr", "【自动更新已安装】这是 0.4.0 新增的番外剧情——《天台演唱会》。"],
+      ["narr", "某天放学，我收到一条群消息：「今晚七点，天台。全员到齐，有事宣布。——冯雨生（代笔：黄落尘）」"],
+      ["ch", "yusheng", "center", "neutral"],
+      ["say", "yusheng", "各位！本座今日召集群英，是因为——本座最近迷上了唱歌！"],
+      ["ch", "luochen", "left", "neutral"],
+      ["say", "luochen", "……所以天台是演唱会场地，我们是被迫的观众。"],
+      ["ch", "lanji", "right", "smile"],
+      ["say", "lanji", "唱歌？唱什么歌？我来给你打拍子！"],
+      ["say", "yusheng", "本座自创神曲——《狂笑之我》，献给大家！"],
+      ["ch", "suqing", "right", "surprise"],
+      ["say", "suqing", "（举着手机）来了来了！94班天团出道演唱会全网直播！"],
+      ["shake", 8, 0.4],
+      ["particle", "sparkle", 25],
+      ["say", "me", "哈哈——这歌名我一听就想笑！哈哈哈哈——"],
+      ["say", "yusheng", "笑什么！本座酝酿了整整一周的歌词——‘世界尽头风很大，狂笑传说笑哈哈’！"],
+      ["say", "me", "（笑得直不起腰）好、好歌！就冲这歌词，今晚我请你吃宵夜！"],
+      ["love", "yusheng", 2],
+      ["love", "luochen", 1],
+      ["love", "lanji", 1],
+      ["love", "suqing", 1],
+      ["particle", "heart", 12],
+      ["narr", "那晚的天台，一个中二少年引吭高歌，一个狂笑少年笑到岔气，面瘫班长默默鼓掌，球王负责气氛组，吃瓜同桌全程直播。"],
+      ["narr", "绵实外校史上最奇怪的天台演唱会，圆满结束。"],
+      ["hide", "yusheng"],
+      ["hide", "luochen"],
+      ["hide", "lanji"],
+      ["hide", "suqing"],
+      ["end", "ending_bonus"]
+    ]
+  },
+  "endings": {
+    "ending_bonus": {
+      "name": "天台演唱会·全员狂笑",
+      "bg": "rooftop",
+      "music": "warm",
+      "ch": "yusheng",
+      "target": "番外 · 天台演唱会",
+      "desc": "《狂笑之我》在94班传唱至今。据说每逢周五，天台都会响起这首歌的旋律。"
+    }
+  },
+  "append_choices": {
+    "prologue_choice": [
+      ["去天台听冯雨生开演唱会（番外·自动更新）", "bonus_route"]
+    ]
+  }
+}

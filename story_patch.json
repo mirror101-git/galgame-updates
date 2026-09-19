@@ -1,53 +1,94 @@
 {
-  "labels": {
-    "bonus_route": [
-      ["title", "番外 · 天台演唱会"],
-      ["trans", "fade", 0.6],
-      ["bg", "rooftop"],
-      ["music", "warm"],
-      ["narr", "【自动更新已安装】这是 0.4.0 新增的番外剧情——《天台演唱会》。"],
-      ["narr", "某天放学，我收到一条群消息：「今晚七点，天台。全员到齐，有事宣布。——冯雨生（代笔：黄落尘）」"],
-      ["ch", "yusheng", "center", "neutral"],
-      ["say", "yusheng", "各位！本座今日召集群英，是因为——本座最近迷上了唱歌！"],
-      ["ch", "luochen", "left", "neutral"],
-      ["say", "luochen", "……所以天台是演唱会场地，我们是被迫的观众。"],
-      ["ch", "lanji", "right", "smile"],
-      ["say", "lanji", "唱歌？唱什么歌？我来给你打拍子！"],
-      ["say", "yusheng", "本座自创神曲——《狂笑之我》，献给大家！"],
-      ["ch", "suqing", "right", "surprise"],
-      ["say", "suqing", "（举着手机）来了来了！94班天团出道演唱会全网直播！"],
-      ["shake", 8, 0.4],
-      ["particle", "sparkle", 25],
-      ["say", "me", "哈哈——这歌名我一听就想笑！哈哈哈哈——"],
-      ["say", "yusheng", "笑什么！本座酝酿了整整一周的歌词——‘世界尽头风很大，狂笑传说笑哈哈’！"],
-      ["say", "me", "（笑得直不起腰）好、好歌！就冲这歌词，今晚我请你吃宵夜！"],
-      ["love", "yusheng", 2],
-      ["love", "luochen", 1],
-      ["love", "lanji", 1],
-      ["love", "suqing", 1],
-      ["particle", "heart", 12],
-      ["narr", "那晚的天台，一个中二少年引吭高歌，一个狂笑少年笑到岔气，面瘫班长默默鼓掌，球王负责气氛组，吃瓜同桌全程直播。"],
-      ["narr", "绵实外校史上最奇怪的天台演唱会，圆满结束。"],
-      ["hide", "yusheng"],
-      ["hide", "luochen"],
-      ["hide", "lanji"],
-      ["hide", "suqing"],
-      ["end", "ending_bonus"]
-    ]
-  },
-  "endings": {
-    "ending_bonus": {
-      "name": "天台演唱会·全员狂笑",
-      "bg": "rooftop",
-      "music": "warm",
-      "ch": "yusheng",
-      "target": "番外 · 天台演唱会",
-      "desc": "《狂笑之我》在94班传唱至今。据说每逢周五，天台都会响起这首歌的旋律。"
+    "version": "0.5.0",
+    "changelog": "新增剧情《走廊罚站》——认识新班主任彳余不一化十，同桌红烧狮子头因抢答班规被罚站十分钟。",
+    "patch": "story_patch.json",
+    "labels": {
+          "bonus_route": [
+                  ["title", "番外 · 天台演唱会"],
+                  ["trans", "fade", 0.6],
+                  ["bg", "rooftop"],
+                  ["narr", "【0.4.0】某天放学，我收到一条群消息：「今晚七点，天台。全员到齐，有事宣布。——冯雨生（代笔：黄落尘）」"],
+                  ["ch", "yusheng", "center", "neutral"],
+                  ["say", "yusheng", "各位！本座今日召集群英，是因为——本座最近迷上了唱歌！"],
+                  ["ch", "luochen", "left", "neutral"],
+                  ["say", "luochen", "……所以天台是演唱会场地，我们是被迫的观众。"],
+                  ["ch", "lanji", "right", "smile"],
+                  ["say", "lanji", "唱歌？唱什么歌？我来给你打拍子！"],
+                  ["say", "yusheng", "本座自创神曲——《狂笑之我》，献给大家！"],
+                  ["ch", "suqing", "right", "surprise"],
+                  ["say", "suqing", "（举着手机）来了来了！94班天团出道演唱会全网直播！"],
+                  ["shake", 8, 0.4],
+                  ["particle", "sparkle", 25],
+                  ["say", "me", "哈哈——这歌名我一听就想笑！哈哈哈哈——"],
+                  ["say", "yusheng", "笑什么！本座酝酿了整整一周的歌词——‘世界尽头风很大，狂笑传说笑哈哈’！"],
+                  ["say", "me", "（笑得直不起腰）好、好歌！就冲这歌词，今晚我请你吃宵夜！"],
+                  ["love", "yusheng", 2],
+                  ["love", "luochen", 1],
+                  ["love", "lanji", 1],
+                  ["love", "suqing", 1],
+                  ["particle", "heart", 12],
+                  ["narr", "那晚的天台，一个中二少年引吭高歌，一个狂笑少年笑到岔气，面瘫班长默默鼓掌，球王负责气氛组，吃瓜同桌全程直播。"],
+                  ["narr", "绵实外校史上最奇怪的天台演唱会，圆满结束。"],
+                  ["hide", "yusheng"],
+                  ["hide", "luochen"],
+                  ["hide", "lanji"],
+                  ["hide", "suqing"],
+                  ["end", "ending_bonus"]
+          ],
+          "corridor_punishment": [
+                  ["title", "番外 · 走廊罚站"],
+                  ["trans", "fade", 0.6],
+                  ["bg", "hallway"],
+                  ["narr", "【0.5.0】某天课间，我在走廊上被一个陌生老师拦了下来。"],
+                  ["ch", "laoban", "center", "worried"],
+                  ["say", "laoban", "彳余不一化十在此——新同学，94班班规第二条，背出来听听？"],
+                  ["say", "me", "（完了，我转学第一天只记住了第一条）"],
+                  ["ch", "suqing", "right", "surprise"],
+                  ["say", "suqing", "老师！班规第二条是——上课不许狂笑！第三条——狂笑超过三秒自动罚站！第四条——罚站时必须有同桌陪同！"],
+                  ["say", "laoban", "嗯？你倒是背得挺熟。那你们俩——就因为第四条，一起去走廊站十分钟吧。"],
+                  ["ch", "suqing", "right", "worried"],
+                  ["say", "suqing", "啊？！我背得这么熟也要罚？！"],
+                  ["say", "me", "（红烧狮子头，你这是搬起石头砸自己的脚）"],
+                  ["hide", "laoban"],
+                  ["narr", "罚站的十分钟里，红烧狮子头从书包掏出小镜子，冲我比了个耶。"],
+                  ["ch", "suqing", "right", "smile"],
+                  ["say", "suqing", "你看你看，罚站都能凑一对，这缘分，不比那三位男模差吧？"],
+                  ["say", "me", "（……好像也有道理）"],
+                  ["love", "suqing", 2],
+                  ["particle", "heart", 8],
+                  ["narr", "那天之后，我和红烧狮子头的罚站友情，又深了一层。"],
+                  ["hide", "suqing"],
+                  ["end", "ending_corridor"]
+          ]
+    },
+    "endings": {
+          "ending_bonus": {
+                  "name": "天台演唱会·全员狂笑",
+                  "bg": "rooftop",
+                  "ch": "yusheng",
+                  "target": "番外 · 天台演唱会",
+                  "desc": "《狂笑之我》在94班传唱至今。据说每逢周五，天台都会响起这首歌的旋律。"
+          },
+          "ending_corridor": {
+                  "name": "走廊罚站·同桌友情",
+                  "bg": "hallway",
+                  "ch": "suqing",
+                  "target": "番外 · 走廊罚站",
+                  "desc": "红烧狮子头至今不明白：为什么背得那么熟，还是要罚站。"
+          }
+    },
+    "chars": {
+          "laoban": {
+                  "name": "彳余不一化十",
+                  "color": [120, 60, 60],
+                  "light": [200, 150, 150],
+                  "role": "94班班主任"
+          }
+    },
+    "append_choices": {
+          "prologue_choice": [
+                  ["去天台听冯雨生开演唱会（番外）", "bonus_route"],
+                  ["课间去走廊溜达溜达（新剧情）", "corridor_punishment"]
+          ]
     }
-  },
-  "append_choices": {
-    "prologue_choice": [
-      ["去天台听冯雨生开演唱会（番外·自动更新）", "bonus_route"]
-    ]
-  }
 }

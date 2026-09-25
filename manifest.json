@@ -1,5 +1,12 @@
 {
-  "version": "0.5.0",
-  "changelog": "新增剧情《走廊罚站》——认识新班主任彳余不一化十",
-  "patch": "story_patch.json"
+    "version": "0.6.0",
+    "changelog": "远程更新资源：红烧狮子头四形态立绘 + 蓝鸡立绘",
+    "patch": "story_patch.json",
+    "assets": [
+          "assets/portraits/suqing.png",
+          "assets/portraits/suqing_smile.png",
+          "assets/portraits/suqing_worried.png",
+          "assets/portraits/suqing_surprise.png",
+          "assets/portraits/lanji.png"
+    ]
 }
